@@ -12,15 +12,15 @@ const ContactUs = () => {
           </p>
           <div>
             <h3 className="font-bold">Address:</h3>
-            <p>Addis Ababa, Ethiopia</p>
+            <p>Teklehaymanot, Addis Ababa, Ethiopia</p>
           </div>
           <div>
             <h3 className="font-bold">Phone:</h3>
-            <p>+251-123-456-789</p>
+            <p>+251912702511 / +251947332007</p>
           </div>
           <div>
             <h3 className="font-bold">Email:</h3>
-            <p>info@almajdagency.com</p>
+            <p>almajd.agency88@gmail.com</p>
           </div>
         </div>
         <div>

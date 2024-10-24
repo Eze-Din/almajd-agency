@@ -8,6 +8,7 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import JobListings from './pages/JobListings';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           </Routes>
         </main>
         <footer className="bg-black text-white py-4 text-center">
-          <p>© 2024 AlMajd Foreign Employment Agency. All rights reserved.</p>
+          <Footer />
         </footer>
       </div>
     </Router>

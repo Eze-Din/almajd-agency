@@ -9,7 +9,7 @@ const Footer = () => {
           <Link to="/" className="text-white hover:text-red-600 mx-4">Home</Link>
           <Link to="/services" className="text-white hover:text-red-600 mx-4">Services</Link>
           <Link to="/about" className="text-white hover:text-red-600 mx-4">About</Link>
-          <Link to="/blog" className="text-white hover:text-red-600 mx-4">Blog</Link>
+          <Link to="/jobs" className="text-white hover:text-red-600 mx-4">Job Listings</Link>
           <Link to="/contact" className="text-white hover:text-red-600 mx-4">Contact</Link>
         </div>
         <p>&copy; {new Date().getFullYear()} AlMajd Foreign Employment Agency. All Rights Reserved.</p>

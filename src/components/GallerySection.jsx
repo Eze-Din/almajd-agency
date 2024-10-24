@@ -4,27 +4,33 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 /* Import Images */
-import general from '../assets/images/general_manager.jpeg';
-import accountant from '../assets/images/accountant.jpeg';
-import customer from '../assets/images/customer_service.jpeg';
-import itexpert from '../assets/images/it_expert.jpeg';
-import relation from '../assets/images/public_relation_officer.jpeg';
+import img1 from '../assets/images/candidates/img1.jpeg';
+import img2 from '../assets/images/candidates/img2.jpeg';
+import img3 from '../assets/images/candidates/img3.jpeg';
+import img4 from '../assets/images/candidates/img4.jpeg';
+import img5 from '../assets/images/candidates/img5.jpeg';
+import img6 from '../assets/images/candidates/img6.jpeg';
+import img7 from '../assets/images/candidates/img7.jpeg';
+import img8 from '../assets/images/candidates/img8.jpeg';
 
 const GalleryPage = () => {
   // Array of photo URLs
   const photos = [
-    { src: general, alt: 'Photo 1' },
-    { src: accountant, alt: 'Photo 2' },
-    { src: customer, alt: 'Photo 3' },
-    { src: itexpert, alt: 'Photo 4' },
-    { src: relation, alt: 'Photo 5' },
+    { src: img1, alt: 'Photo 1' },
+    { src: img2, alt: 'Photo 2' },
+    { src: img3, alt: 'Photo 3' },
+    { src: img4, alt: 'Photo 4' },
+    { src: img5, alt: 'Photo 5' },
+    { src: img6, alt: 'Photo 3' },
+    { src: img7, alt: 'Photo 4' },
+    { src: img8, alt: 'Photo 5' },
   ];
 
   // Array of YouTube video IDs and thumbnails
   const videos = [
-    { id: '35g7UMVbfPc', thumbnail: accountant },
-    { id: 'IdejM6wCkxA', thumbnail: general },
-    { id: '-Ri2DOnbaoo', thumbnail: customer },
+    { id: '35g7UMVbfPc', thumbnail: img4 },
+    { id: 'IdejM6wCkxA', thumbnail: img5 },
+    { id: '-Ri2DOnbaoo', thumbnail: img8 },
   ];
 
   // State to track which video is currently playing

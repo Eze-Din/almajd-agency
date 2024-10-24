@@ -1,10 +1,10 @@
 import React from 'react';
 
 const services = [
-  { title: 'Recruitment', description: 'Finding the right talent for your business' },
-  { title: 'Documentation', description: 'Helping you with visa and documentation processes' },
-  { title: 'Pre-departure Training', description: 'Preparing candidates for their job abroad' },
-  { title: 'Post-placement Support', description: 'Providing support after job placement' },
+  { title: 'Trained Housemaids', description: 'Skilled and reliable housemaids to support daily household tasks, ensuring a clean and organized home environment.' },
+  { title: 'House Drivers', description: 'Professional drivers with extensive experience, ensuring safe and timely transportation for you and your family.' },
+  { title: 'House Guards', description: 'Trained security personnel dedicated to safeguarding your home, providing peace of mind and a secure environment.' },
+  { title: 'Home Nurses', description: 'Compassionate and qualified home nurses to assist with healthcare needs, ensuring comfort and care for your loved ones.' },
 ];
 
 const ServicesSection = () => {

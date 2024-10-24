@@ -5,7 +5,7 @@ const ContactForm = () => {
     name: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
   });
 
   const handleChange = (e) => {
@@ -14,12 +14,14 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form submission logic (send email or store data)
-    console.log('Form data submitted:', formData);
+    const mailtoLink = `mailto:almajd.agency88@gmail.com?subject=${encodeURIComponent(
+      formData.subject
+    )}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
+    window.location.href = mailtoLink;
   };
 
   return (
-    <form className="bg-white shadow-lg rounded-lg p-8" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="bg-white shadow-lg rounded-lg p-8">
       <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
       <div className="mb-4">
         <label htmlFor="name" className="block text-gray-700">Name:</label>
@@ -51,6 +53,7 @@ const ContactForm = () => {
           className="w-full border border-gray-300 p-2 rounded-md"
           value={formData.subject}
           onChange={handleChange}
+          required
         />
       </div>
       <div className="mb-4">
