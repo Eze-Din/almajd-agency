@@ -12,6 +12,7 @@ import img5 from '../assets/images/candidates/img5.jpeg';
 import img6 from '../assets/images/candidates/img6.jpeg';
 import img7 from '../assets/images/candidates/img7.jpeg';
 import img8 from '../assets/images/candidates/img8.jpeg';
+import promo from '../assets/images/promo.png';
 
 const GalleryPage = () => {
   // Array of photo URLs
@@ -28,9 +29,13 @@ const GalleryPage = () => {
 
   // Array of YouTube video IDs and thumbnails
   const videos = [
-    { id: '35g7UMVbfPc', thumbnail: img4 },
-    { id: 'IdejM6wCkxA', thumbnail: img5 },
-    { id: '-Ri2DOnbaoo', thumbnail: img8 },
+    { id: '7296528869350264069', thumbnail: promo },
+    { id: '7346258546507402501', thumbnail: img5 },
+    { id: '7339243040789384453', thumbnail: img8 },
+    { id: '7305881053367995653', thumbnail: img2 },
+    { id: '7303230172692499718', thumbnail: img1 },
+    { id: '7428288565278280966', thumbnail: img4 },
+    { id: '7307670592654757126', thumbnail: img6 },
   ];
 
   // State to track which video is currently playing
@@ -86,12 +91,14 @@ const GalleryPage = () => {
                 <div className="relative">
                   <div className="relative h-0 pb-[56.25%]"> {/* 16:9 aspect ratio */}
                     <iframe
-                      className="absolute top-0 left-0 w-full h-full"
-                      src={`https://www.youtube.com/embed/${video.id}?autoplay=1&controls=1`}
+                      src={`https://www.tiktok.com/embed/${video.id}`}
+                      title={`Video ${index + 1}`}
+                      width="100%"
+                      height="600"
                       frameBorder="0"
                       allow="autoplay; encrypted-media"
                       allowFullScreen
-                      title={`Video ${index + 1}`}
+                      className="rounded-md"
                     />
                   </div>
                   {/* Close button */}

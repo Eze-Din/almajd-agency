@@ -1,19 +1,66 @@
 import React from 'react';
+import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
-import logoimg from '../assets/images/logo.png';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import img1 from '../assets/images/candidates/img1.jpeg';
+import img2 from '../assets/images/candidates/img2.jpeg';
+import img3 from '../assets/images/candidates/img3.jpeg';
+import img4 from '../assets/images/candidates/img4.jpeg';
+import img5 from '../assets/images/candidates/img5.jpeg';
+import img6 from '../assets/images/candidates/img6.jpeg';
+import img7 from '../assets/images/candidates/img7.jpeg';
+import img8 from '../assets/images/candidates/img8.jpeg';
+
+const images = [
+  { src: img1, alt: 'Image 1' },
+  { src: img2, alt: 'Image 2' },
+  { src: img3, alt: 'Image 3' },
+  { src: img4, alt: 'Image 3' },
+  { src: img5, alt: 'Image 3' },
+  { src: img6, alt: 'Image 3' },
+  { src: img7, alt: 'Image 3' },
+  { src: img8, alt: 'Image 3' },
+];
 
 const HeroSection = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+  };
+
   return (
-    <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/path-to-hero-image.jpg')" }}>
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="relative z-10 text-center text-white flex flex-col justify-center items-center h-full">
-        <div className="bg-white rounded-full p-6">
-          <img src={logoimg} alt="AlMajd Logo" className="h-24 w-auto" />
-        </div>
-        <h1 className="text-4xl md:text-6xl font-bold mt-8">Empowering Your Global Workforce</h1>
-        <p className="text-lg md:text-2xl mt-4">Connecting Ethiopian talent with international opportunities</p>
-        <Link to="/contact" className="mt-8 bg-red-600 hover:bg-black text-white py-3 px-8 rounded-md transition duration-300">
-          Get Started
+    <div className="relative h-screen w-full">
+      <Slider {...settings} className="h-full">
+        {images.map((image, index) => (
+          <div key={index} className="relative h-screen">
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-60"
+              style={{ backgroundImage: `url(${image.src})` }}
+            />
+          </div>
+        ))}
+      </Slider>
+
+      {/* Overlay Text */}
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 bg-black bg-opacity-40">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          Welcome to AlMajd Foreign Employment Agency
+        </h1>
+        <p className="text-lg md:text-xl mb-6">
+          Quality Labour, Delivered On Time.
+        </p>
+        <Link to="/jobs">
+          <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+            Get Started
+          </button>
         </Link>
       </div>
     </div>

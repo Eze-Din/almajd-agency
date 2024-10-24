@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';  // Assuming the logo is placed in assets folder
-import { FaGlobe } from 'react-icons/fa';
+import { FaGlobe, FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,10 +33,14 @@ const Navbar = () => {
           <Link to="/gallery" className="hover:bg-black hover:text-white py-2 px-4">Gallery</Link>
           <Link to="/about" className="hover:bg-black hover:text-white py-2 px-4">About</Link>
           <Link to="/contact" className="hover:bg-black hover:text-white py-2 px-4">Contact</Link>
-          <Link to="/ar" className="hover:bg-black hover:text-white flex items-center py-2 px-4">
-            <FaGlobe className="mr-2" />
-            <span>عربي</span>
-          </Link>
+          <a
+            href="https://wa.me/+251993555766"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-500 bg-white p-2 rounded-full hover:bg-green-500 hover:text-white transition-colors duration-200"
+          >
+            <FaWhatsapp size={24} />
+          </a>
         </div>
       </div>
 
@@ -49,10 +53,14 @@ const Navbar = () => {
           <Link to="/gallery" className="block text-center hover:bg-black hover:text-white py-2" onClick={() => setIsOpen(false)}>Gallery</Link>
           <Link to="/about" className="block text-center hover:bg-black hover:text-white py-2" onClick={() => setIsOpen(false)}>About</Link>
           <Link to="/contact" className="block text-center hover:bg-black hover:text-white py-2" onClick={() => setIsOpen(false)}>Contact</Link>
-          <Link to="/ar" onClick={() => setIsOpen(false)} className="flex hover:bg-black hover:text-white items-center justify-center py-2">
-            <FaGlobe className="mr-2" />
-            <span>عربي</span>
-          </Link>
+          <a
+              href="https://wa.me/+251993555766"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-500 bg-white p-2 rounded-full hover:bg-green-500 hover:text-white transition-colors duration-200 flex justify-center"
+            >
+              <FaWhatsapp size={24} />
+          </a>
         </div>
       )}
     </nav>
