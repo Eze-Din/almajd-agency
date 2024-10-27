@@ -87,27 +87,27 @@ const AboutPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
             <img src={general} alt="Team Member" className="mx-auto h-32 w-32 rounded-full mb-4" />
-            <h3 className="text-xl font-bold mb-2">John Doe</h3>
+            <h3 className="text-xl font-bold mb-2">Ali Nasir</h3>
             <p className="text-lg leading-relaxed">General Manager</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
             <img src={itexpert} alt="Team Member" className="mx-auto h-32 w-32 rounded-full mb-4" />
-            <h3 className="text-xl font-bold mb-2">Jane Smith</h3>
+            <h3 className="text-xl font-bold mb-2">Abdulfetah Abdullah</h3>
             <p className="text-lg leading-relaxed">It Expert</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
             <img src={customer} alt="Team Member" className="mx-auto h-32 w-32 rounded-full mb-4" />
-            <h3 className="text-xl font-bold mb-2">Michael Brown</h3>
+            <h3 className="text-xl font-bold mb-2">Ayesha Mohammed</h3>
             <p className="text-lg leading-relaxed">Customer Support</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
             <img src={relation} alt="Team Member" className="mx-auto h-32 w-32 rounded-full mb-4" />
-            <h3 className="text-xl font-bold mb-2">Michael Brown</h3>
+            <h3 className="text-xl font-bold mb-2">Ahmed Abdellah</h3>
             <p className="text-lg leading-relaxed">Public Relation Officer</p>
           </div>
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
             <img src={accountant} alt="Team Member" className="mx-auto h-32 w-32 rounded-full mb-4" />
-            <h3 className="text-xl font-bold mb-2">Michael Brown</h3>
+            <h3 className="text-xl font-bold mb-2">Ahlam Yimam</h3>
             <p className="text-lg leading-relaxed">Accountant</p>
           </div>
         </div>

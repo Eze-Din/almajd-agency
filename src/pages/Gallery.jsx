@@ -4,27 +4,38 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 /* Import Images */
-import general from '../assets/images/general_manager.jpeg';
-import accountant from '../assets/images/accountant.jpeg';
-import customer from '../assets/images/customer_service.jpeg';
-import itexpert from '../assets/images/it_expert.jpeg';
-import relation from '../assets/images/public_relation_officer.jpeg';
+import img1 from '../assets/images/candidates/img1.jpeg';
+import img2 from '../assets/images/candidates/img2.jpeg';
+import img3 from '../assets/images/candidates/img3.jpeg';
+import img4 from '../assets/images/candidates/img4.jpeg';
+import img5 from '../assets/images/candidates/img5.jpeg';
+import img6 from '../assets/images/candidates/img6.jpeg';
+import img7 from '../assets/images/candidates/img7.jpeg';
+import img8 from '../assets/images/candidates/img8.jpeg';
+import promo from '../assets/images/promo.png';
 
 const GalleryPage = () => {
   // Array of photo URLs
   const photos = [
-    { src: general, alt: 'Photo 1' },
-    { src: accountant, alt: 'Photo 2' },
-    { src: customer, alt: 'Photo 3' },
-    { src: itexpert, alt: 'Photo 4' },
-    { src: relation, alt: 'Photo 5' },
+    { src: img1, alt: 'Photo 1' },
+    { src: img2, alt: 'Photo 2' },
+    { src: img3, alt: 'Photo 3' },
+    { src: img4, alt: 'Photo 4' },
+    { src: img5, alt: 'Photo 5' },
+    { src: img6, alt: 'Photo 3' },
+    { src: img7, alt: 'Photo 4' },
+    { src: img8, alt: 'Photo 5' },
   ];
 
   // Array of YouTube video IDs and thumbnails
   const videos = [
-    { id: '35g7UMVbfPc', thumbnail: accountant },
-    { id: 'IdejM6wCkxA', thumbnail: general },
-    { id: '-Ri2DOnbaoo', thumbnail: customer },
+    { id: '7296528869350264069', thumbnail: promo },
+    { id: '7346258546507402501', thumbnail: img5 },
+    { id: '7339243040789384453', thumbnail: img8 },
+    { id: '7305881053367995653', thumbnail: img2 },
+    { id: '7303230172692499718', thumbnail: img1 },
+    { id: '7428288565278280966', thumbnail: img4 },
+    { id: '7307670592654757126', thumbnail: img6 },
   ];
 
   // State to track which video is currently playing
@@ -81,12 +92,14 @@ const GalleryPage = () => {
                 <div className="relative">
                   <div className="relative h-0 pb-[56.25%]"> {/* 16:9 aspect ratio */}
                     <iframe
-                      className="absolute top-0 left-0 w-full h-full"
-                      src={`https://www.youtube.com/embed/${video.id}?autoplay=1&controls=1`}
+                      src={`https://www.tiktok.com/embed/${video.id}`}
+                      title={`Video ${index + 1}`}
+                      width="100%"
+                      height="600"
                       frameBorder="0"
                       allow="autoplay; encrypted-media"
                       allowFullScreen
-                      title={`Video ${index + 1}`}
+                      className="rounded-md"
                     />
                   </div>
                   {/* Close button */}

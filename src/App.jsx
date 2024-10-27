@@ -8,6 +8,7 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import JobListings from './pages/JobListings';
+import GoUpButton from './components/GoUpButton';
 import Footer from './components/Footer';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/jobs" element={<JobListings />} />
           </Routes>
         </main>
+        <GoUpButton />
         <footer className="bg-black text-white py-4 text-center">
           <Footer />
         </footer>
