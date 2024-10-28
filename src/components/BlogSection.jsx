@@ -1,13 +1,35 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import img1 from '../assets/images/candidates/img1.jpeg';
-import img2 from '../assets/images/candidates/img2.jpeg';
-import img3 from '../assets/images/candidates/img3.jpeg';
+import manager from '../assets/images/general_manager.jpeg';
+import maids from '../assets/images/candidates/img5.jpeg';
+import gov from '../assets/images/gov.jpg';
 
 const postsData = [
-  { id: 1, title: 'Guide to Hiring Housemaids Abroad', image: img1, content: 'An in-depth look...', date: '2024-08-20', popularity: 20 },
-  { id: 2, title: 'Need driver for your family?', image: img2, content: 'Qualities to consider...', date: '2024-08-29', popularity: 15 },
-  { id: 3, title: 'Key Qualities in Reliable Home Nurses', image: img3, content: 'Qualities to consider...', date: '2024-08-25', popularity: 15 },
+  {
+    id: 1,
+    title: "Almajd's General Manager Ali Nasir Explained About Their Services",
+    image: manager,
+    content: "In a recent interview, Almajd's General Manager, Ali Nasir, shared insights into the agency’s services and mission. He emphasized their dedication to quality and reliability in matching qualified candidates to meet client needs, focusing on training programs and continuous support to employees. 'Our goal is to create trusting partnerships with both clients and employees,' Nasir stated.",
+    date: '2024-10-27',
+    popularity: 25,
+  },
+  {
+    id: 2,
+    title: 'Over 200 Trained House Maids Delivered to Saudi Arabia',
+    image: maids,
+    content: "Almajd recently reached a major milestone, successfully sending over 200 trained housemaids to various regions in Saudi Arabia. The agency carefully selects, trains, and prepares candidates, ensuring they meet high standards of professionalism. This achievement reflects the agency's commitment to quality and reliable services for both employees and clients.",
+    date: '2024-10-20',
+    popularity: 40,
+  },
+  {
+    id: 3,
+    title: 'Government Officials Report on Employment Agencies',
+    image: gov,
+    content: "In a recent public statement, government officials addressed the vital role of employment agencies like Almajd in providing structured opportunities for international work. They highlighted the agencies' compliance with regulatory standards, dedication to fair treatment of workers, and the positive economic impact these partnerships create.",
+    date: '2024-10-15',
+    popularity: 35,
+  },
+  // Add any other posts as needed
 ];
 
 const BlogSection = () => {
@@ -48,7 +70,7 @@ const BlogSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredPosts.map(post => (
             <div key={post.id} className="bg-white p-6 shadow-md rounded-md hover:bg-red-50 transition duration-300">
-              <img src={post.image} alt={post.title} className="h-40 w-full object-cover rounded-md mb-4" />
+              <img src={post.image} alt={post.title} className="h-96 w-full object-cover rounded-md mb-4" />
               <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
               <p className="text-gray-500 text-sm mb-2">{new Date(post.date).toLocaleDateString()}</p>
               <p className="text-gray-700 mb-4">{post.content.substring(0, 100)}...</p>

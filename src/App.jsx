@@ -8,6 +8,8 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import JobListings from './pages/JobListings';
+import BlogSection from './components/BlogSection';
+import BlogPostPage from './components/BlogPostPage';
 import GoUpButton from './components/GoUpButton';
 import Footer from './components/Footer';
 
@@ -25,6 +27,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/jobs" element={<JobListings />} />
+            <Route path="/blog" element={<BlogSection />} />
+            <Route path="/blog/:postId" element={<BlogPostPage />} />
           </Routes>
         </main>
         <GoUpButton />
