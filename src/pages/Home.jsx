@@ -4,6 +4,8 @@ import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import JobCatagories from '../components/JobCatagories';
+import StatesSection from '../components/StatesSection';
+import BlogSection from '../components/BlogSection';
 import Testimonial from '../components/Testimonial';
 import GallerySection from '../components/GallerySection';
 import ContactSection from '../components/ContactSection';
@@ -36,6 +38,8 @@ const Home = () => {
         </div>
       </section>
       <JobCatagories />
+      <StatesSection />
+      <BlogSection />
       <Testimonial />
       <GallerySection />
       <ContactSection />
